@@ -1,0 +1,228 @@
+## ----- ----- -----
+
+Curso: PHP do zero ao avançado 30H
+Author: Matheus Batisti
+
+
+-- ----- ----- -----
+
+
+
+-- ----- ----- -----
+Aula 10
+
+Localhost:
+ é a forma de acessar o servidor local da máquina,
+ equivale ao IP 127.01.0.1 nosso PC
+
+IP
+siginifica internet protocol
+
+FTP
+file transferencia protocolo
+
+o dominio do site mascara o DNS real
+
+-- ----- ----- -----
+Aula 11
+sempre abrir a tag PHP : <?php (código) ?>
+
+-- ----- ----- -----
+Aula 12 exercício
+
+-- ----- ----- -----
+
+Aula 13 PHP e suas dependências
+gunção phpinfo(); exibe a versão e todas as extensões
+
+-- ----- ----- -----
+Aula 14 como tirar o melhor proveito do curso
+fazer exercicios
+fazer exemplos diferentes 
+fazer projetos pessoais
+fazer anotações
+ver aula duas vezes em velocidade avançada
+
+-- ----- ----- -----
+da 16 a aula 19 
+slides e arquivos para baixar
+
+seção 1 encerrada 
+
+-- ----- ----- -----
+
+Seção 2 conceitos básicos
+Aula 20 introdução seção
+Aula 21 case sensitivity
+váriaveis são case sensitives
+seção é muito básica avancei para terceira
+
+-- ----- ----- -----
+Array Associativo
+O array associativo é basicamente um array, porém com chave e valor;
+A estrutura base é a mesma, mas vamos construir dessa maneira:
+$arr = [‘nome’ => ‘Matheus’, idade => 29]
+Chave entre aspas, seta para apontar o valor e valor;
+
+
+-- ----- ----- -----
+
+Aula 43 exercício 6 
+$carro = [
+'tipo' => 'corrida',
+'rodas' => 'cromadas',
+'velocidademaxima' => 300,
+];
+
+$tipo = $carro['tipo'];
+$rodas = $carro['rodas'];
+$velocidademaxima = $carro['velocidademaxima'];
+
+echo "O carro é de $tipo e tem rodas $rodas e chega na velocidade de $velocidademaxima ";
+
+isso vai imprimir no console :O carro é de corrida e tem rodas cromadas e chega na velocidade de 300
+-- ----- ----- -----
+Aula 43 exercício 7
+
+Crie um arquivo PHP;
+Crie um array associativo com características de uma pessoa;
+Desafio: faça um if checando se ela é maior de idade e imprima uma
+mensagem, caso seja; 
+
+<?php
+
+$pessoa = [
+'cabelo' => 'loiro',
+'cor' => 'morena',
+'idade' => 20,
+];
+
+$cabelo = $pessoa['cabelo'];
+$cor = $pessoa['cor'];
+$idade = $pessoa['idade'];
+
+if($idade>=18){
+echo "A pessoa é maior de idade ";
+} else 
+echo "menor de idade"
+?>
+
+isso vai imprimir no console: A pessoa é maior de idade
+
+-- ----- ----- -----
+
+Aula 44 objetos
+
+PHP possui o paradigma de orientação a objetos;
+Podemos criar classes e objetos, e o objeto é considerado um tipo de
+dado;
+Objetos possuem métodos que são suas ações e propriedades que são
+suas características;
+sempre bom relembrar
+
+-- ----- ----- -----
+
+Sobre as variáveis
+São a forma que temos para declarar um valor e salvá-lo na memória;
+Uma variável em PHP tem o $ na frente do seu nome;
+Ex: $nome = “Matheus”;
+Podemos salvar qualquer tipo de dado;
+Podemos alterar o valor de uma variável no decorrer do programa;
+Podemos imprimir o valor de uma variável com echo;
+
+-- ----- ----- -----
+
+Exercício 8
+Crie um arquivo PHP;
+Crie três variáveis com tipos de dados diferentes;
+Imprima estas variáveis;
+
+<?php
+$numero = 100;
+$nome = 'emanuel';
+$coresConjunto= ['preto', 'branco', 'amarelo', 'azul'];
+
+
+echo  $numero . "\n" ;
+
+echo  $nome . "\n" . "\n";
+
+print_r($coresConjunto);
+
+?>
+
+isso vai imprimir no console:
+100
+emanuel
+
+Array
+(
+    [0] => preto
+    [1] => branco
+    [2] => amarelo
+    [3] => azul
+-- ----- ----- -----
+
+Exercício 9
+Crie um arquivo PHP;
+Crie duas variáveis com números;
+Cria uma terceira com a soma destes dois números;
+Lembrando: a soma pode ser feita com o símbolo +;
+
+<?php
+$a=2;
+$b=6;
+$c = $a + $b;
+echo $c;
+?>
+
+isso vai imprimir no console: 
+8
+
+-- ----- ----- -----
+
+-- ----- ----- -----
+
+
+
+-- ----- ----- -----
+
+-- ----- ----- -----
+
+
+
+-- ----- ----- -----
+
+-- ----- ----- -----
+
+
+
+-- ----- ----- -----
+
+-- ----- ----- -----
+
+
+
+-- ----- ----- -----
+
+-- ----- ----- -----
+
+
+
+-- ----- ----- -----
+
+-- ----- ----- -----
+
+
+
+-- ----- ----- -----
+
+-- ----- ----- -----
+
+
+
+-- ----- ----- -----
+
+
+
+
