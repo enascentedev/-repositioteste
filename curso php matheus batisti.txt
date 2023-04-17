@@ -181,15 +181,124 @@ isso vai imprimir no console:
 
 -- ----- ----- -----
 
+Exercício 10
+● Crie um arquivo PHP;
+● Crie uma operação que utiliza subtração ( - ), divisão ( / ) e multiplicação
+● Armazene todos os valores em variáveis;
+● Imprima o resultado final na tela;
+<?php
+
+// -, /, *
+$a = 10;
+$x = 5;
+$z = 9;
+
+$operacao = ($x - $z) / $a * $z;
+
+echo $operacao;
+isso vai imprimir no console: -3.6
+-4 /10= -0,40
+-0,40 * 9= -3,6
+
 -- ----- ----- -----
 
 
+Exercício 11
+● Crie um arquivo PHP;
+● Teste a expressão “5” * 12;
+● Utilize a função gettype() com o resultado como parâmetro para checar o
+tipo resultante da operação;
+<?php
+
+  $operacao = "5" * 12;
+
+  echo $operacao . "\n" ;;
+
+  echo gettype($operacao) . "\n" ;
+  echo gettype([]) . "\n" ;
+  
+  echo gettype(12.2) . "\n" ;
+
+  echo gettype("teste");
+
+isso vai imprimir no console:
+
+60
+integer
+array
+double
+string
+
 
 -- ----- ----- -----
 
+Exercício 12
+● Crie um arquivo PHP;
+● Crie uma operação com cada um dos operadores básicos;
+● Cada operação deve estar em uma variável diferente;
+● Imprima cada uma das etapas;
+● Ex: soma -> multiplicação -> divisão -> subtração;
+
+<?php
+
+  // +, -, /, *
+  $a = 3;
+  $b = 12;
+
+  $op1 = $a - $b;
+  echo $op1  . "\n";
+ 
+
+  $c = 12.4;
+
+  $op2 = $op1 * $c;
+  echo $op2  . "\n";
+  
+
+  $d = 4.8;
+
+  $op3 = $op2 + $d;
+  echo $op3 . "\n";
+  ;
+
+  $e = 9.2;
+
+  $op4 = $op3 / $e;
+
+  echo $op4  . "\n";
+
+isso vai imprimir no console:
+
+-9
+-111.6
+-106.8
+-11.608695652174
+
+fixar a variável local
+
 -- ----- ----- -----
 
+Exercício 13
+● Crie um arquivo PHP;
+● Teste o operador de resto em duas divisões;
+● Uma não exata e outra exata;
 
+<?php
+
+  $a = 14;
+  $b = 2;
+  $c = 3;
+
+  echo $a % $b;
+  echo "\n";
+  echo $a % $c;
+  echo "\n";
+
+isso vai imprimir no console:
+0
+2
+% imprime somente o resto da divisão dos numeros 14/2 da uma divisão exata e não sobra nada portanto 0
+14/3 da um reto de 2
 
 -- ----- ----- -----
 
