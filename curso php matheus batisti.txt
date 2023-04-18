@@ -297,19 +297,91 @@ Exercício 13
 isso vai imprimir no console:
 0
 2
+
 % imprime somente o resto da divisão dos numeros 14/2 da uma divisão exata e não sobra nada portanto 0
 14/3 da um reto de 2
 
 -- ----- ----- -----
 
+Exercício 14
+● Crie um arquivo PHP;
+● Crie uma variável saudação, nome e outra de sobrenome;
+● Imprima com echo a concatenação de saudação, nome e sobrenome;
+<?php
+$boasvindas= "seja bem vindo";
+$nome= "Emanuel";
+
+echo $boasvindas . "\n" .$nome;
+isso 
+isso vai imprimir no console :
+seja bem vindo
+Emanuel
 -- ----- ----- -----
 
+Exercício 15
+● Crie uma operação que retorne falso com igualdade;
+● Crie uma operação que retorne verdadeiro com igualdade;
+<?php
+$a= 4;
+$b= 5;
+$c= 4;
+if($a==$b) {
+  echo "a é igual a b";
+}
+if ($a==$c) {
+  echo "a é igual a c";
+}
 
+isso vai imprimir no console:
+a é igual a c
 
 -- ----- ----- -----
 
+Exercício 16
+● Insira o valor 5 em uma variável, e o valor 3 em outra;
+● Teste os operadores de: igualdade, diferença, idêntico e não idêntico;
+<?php
+$a= 5;
+$b= 3;
+if ($a==$b){
+  echo " a é igual a b ". "\n";
+}
+if ($a!=$b){
+  echo " a é diferente a b " . "\n";
+}
+if ($a===$b){
+  echo " a é idêntico a b ". "\n";
+}
+if ($a!==$b){
+  echo " a não é a b ". "\n";
+}
+
+isso vai imprimir no console :
+a é diferente a b 
+a não é a b
 -- ----- ----- -----
 
+Exercício 17
+● Verifique as seguintes operações com AND;
+● 15 > 5 AND “joão” === “joão”
+● “teste” > 5 AND 1
+● 2 == 3 AND 5 >= 3
+<?php
+
+if (15 > 5 && "joão" === "joão"){
+  echo  "A comparação 1 é verdadeira". "\n";
+}
+if ("teste" > 5 && 1){
+  echo "A comparação 2 é verdadeira" . "\n";
+}
+if (2 == 3 && 5 >= 3){
+  echo "A comparação 3 é verdadeira". "\n";
+}
+
+isso vai imprimir no console:
+
+A comparação 1 é verdadeira
+A comparação 2 é verdadeira
 
 
 -- ----- ----- -----
