@@ -379,19 +379,73 @@ if (2 == 3 && 5 >= 3){
 }
 
 isso vai imprimir no console:
-
 A comparação 1 é verdadeira
 A comparação 2 é verdadeira
 
 
 -- ----- ----- -----
 
+Exercício 18
+● Verifique as seguintes operações com OR;
+● 12 < 5 OR “João” === “João”
+● 1 > 5 OR 1
+● 20 === “20” AND 51 >= 31
+OR = ||
+AND = &&
+<?php
+if (12 < 5 || "joão" === "joão"){
+  echo  "A comparação 1 é verdadeira". "\n";
+}
+if (1> 5 || 1){
+  echo "A comparação 2 é verdadeira" . "\n";
+}
+if (20 === "20" && 51 >= 3){
+  echo "A comparação 3 é verdadeira". "\n";
+}
+
+isso vai imprimir no console:
+A comparação 1 é verdadeira
+A comparação 2 é verdadeira
+
 -- ----- ----- -----
 
+Exercício 19
+● Converta os seguintes dados para int com o operador de cast;
+● “testando”
+● 12.9
+● true
+● [1, 2, 3]
+● E veja os resultados
+<?php
+$a= (int) "testando";
 
+$b= (int) 12.9;
+
+$c= (int) [true];
+
+$d= (int) [1, 2, 3];
+isso vai imprimir no console:
+0
+12
+1
+1
 
 -- ----- ----- -----
 
+Exercício 20
+● Atribua dois números a variáveis distintas;
+● Faça uma comparação de menor ou igual com o operador ternário;
+● Imprima resultados para ambas as possibilidades;
+<?php
+$a=10;
+$b=5;
+if ($a>$b){
+  echo " a é maior que b" . "\n";
+} else {
+  echo "b é maior que a " . "\n";
+}
+isso vai imprimir no console:
+a é maior que b
 -- ----- ----- -----
 
 
