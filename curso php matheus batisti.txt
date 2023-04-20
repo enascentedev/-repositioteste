@@ -446,17 +446,94 @@ if ($a>$b){
 }
 isso vai imprimir no console:
 a é maior que b
--- ----- ----- -----
-
-
 
 -- ----- ----- -----
 
+Exercício 21
+● Faça as seguintes verificações em estruturas if:
+● 5 é maior que 2?
+● Matheus é diferente de Pedro
+● 12 é menor ou igual a 11
+● Você deve inserir os valores em variáveis;
+<?php
+$a = 5;
+$b = 2;
+if ($a>$b){
+  echo "entrou no if 1". "\n";
+}
+
+$nome = "matheus";
+$nome2 = "pedro";
+
+if ($nome!= $nome2){
+  echo "entrou no if 2". "\n";
+}
+
+$numero = 12;
+$numero2 = 11;
+
+if ($numero>$numero2){
+  echo "entrou no if 3". "\n";
+}
+
+isso vai imprimir no console:
+entrou no if 1
+entrou no if 2
+entrou no if 3
+
 -- ----- ----- -----
 
+Exercício 22
+● Crie variáveis que recebem idades;
+● Cheque se as idades são maiores ou iguais a 18;
+● Se sim, imprima uma mensagem que a pessoa é maior de idade;
+
+Exercício 23
+● Complemente o exercício 22;
+● Insira um else com uma mensagem para as pessoas que são menores de
+idade;
+
+<?php
+$idade1 = 16;
+$idade2 = 22;
+$idade3 = 25;
+$maioridade = 18;
+
+if ($idade1 >= $maioridade){
+  echo "idade1 é maior de idade ". "\n";
+}else{
+  echo "idade1 é menor de idade ". "\n";
+}
+
+if ($idade2 >= $maioridade){
+  echo "idade2 é maior de idade ". "\n";
+}else{
+  echo "idade2 é menor  de idade ". "\n";
+}
+
+if ($idade3 >= $maioridade){
+  echo "idade3 é maior de idade ". "\n";
+}else{
+  echo "idade3 é menor  de idade ". "\n";
+}
+
+?>
+
+isso vai imprimir no console:
+
+idade1 é menor de idade
+idade2 é maior de idade
+idade3 é maior de idade 
 
 
 -- ----- ----- -----
+
+Exercício 24
+● Crie algumas variáveis com tipos de dados diferentes: string, int e
+boolean, por exemplo;
+● Cheque se a variável é um inteiro;
+● Caso sim, apresente uma mensagem confirmando o tipo de dado;
+● Caso não, apresente outra mensagem;
 
 
 
