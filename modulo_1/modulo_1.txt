@@ -1,0 +1,79 @@
+## ----- ----- -----
+
+Curso: PHP do zero ao avançado 30H
+Author: Matheus Batisti
+modulo 1 introdução
+
+
+-- ----- ----- -----
+Aula 1 introdução
+
+Faz um breve resumo do curso curso de 30 h com 4 projetos práticos
+
+-- ----- ----- -----
+Aula 2 Apresentação do curso
+
+mostra o roadmap do curso mostrando todos os pontos do curso
+
+-- ----- ----- -----
+Aula 3, 4 e 5  Fala o que é, o que faz e a história do PHP
+
+-- ----- ----- -----
+Aulas 6,7,8,9,10,11 e 12 Preparando o ambiente de desenvolvimento
+
+Bom lembrar que o php usa o xamp e roda no localhost. Os arquivos devem ser ficar dentro da pasta htdocs do programa xamp
+
+-- ----- ----- -----
+Aula 10
+
+-- ----- ----- -----
+Aula 13 o que é localhost?
+
+Localhost:
+ é a forma de acessar o servidor local da máquina,
+ equivale ao IP 127.01.0.1 nosso PC
+
+IP
+siginifica internet protocol
+
+FTP
+file transferencia protocolo
+
+o dominio do site mascara o DNS real
+
+-- ----- ----- -----
+Aula 14 A sintaxe do PHP
+
+sempre abrir a tag PHP : <?php (código) ?>
+colocar ; em cada fechamento de instrução
+
+-- ----- ----- -----
+Aula 15 exercício_1
+
+imprimir um nome na tela
+
+-- ----- ----- -----
+Aula 16 Informações sobre PHP
+
+PHP e suas dependências
+função: phpinfo(); 
+exibe a versão e todas as extensões que existem no php
+
+-- ----- ----- -----
+Aula 17 como tirar o melhor proveito do curso
+
+fazer exercicios
+fazer exemplos diferentes 
+fazer projetos pessoais
+fazer anotações
+ver aula duas vezes em velocidade avançada
+
+-- ----- ----- -----
+18,19,20,21,22,23 Aula
+
+Arquivos do curso e avisos
+
+seção 1 encerrada 
+
+-- ----- ----- -----
+

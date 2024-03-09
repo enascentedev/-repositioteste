@@ -1,0 +1,520 @@
+## ----- ----- -----
+
+Curso: PHP do zero ao avançado 30H
+Author: Matheus Batisti
+modulo 2 conceitos básicos PHP
+
+-- ----- ----- -----
+Aula 24,25,26,27,28 
+
+Case sensitivity
+● Significa sensibilidade a casas maiúsculas e minúsculas;
+● Para instruções PHP não temos essa diferença, ou seja: echo = ECHO;
+● Porém para variáveis são case sensitive;
+● Ou seja, $nome != $NOME;
+● Obs: veremos variáveis em detalhes mais adiante;
+
+Instruções de código
+● As instruções simples de PHP são separadas por ponto e vírgula;
+● Instruções simples são instruções de uma linha;
+● Quando há uma instrução maior, como de condição ou repetição, a 
+definição da mesma é dada por abertura e fechamento de chaves;
+● Nestes casos não precisaremos de ponto e vírgula;
+Espaços em branco
+● Para interpretação do código em PHP o espaço em branco é ignorado;
+● Isso acontece pois o mesmo é removido antes da execução;
+● A quebra de linha também também é ignorada;
+● Porém se utilizada de má forma pode gerar erros inesperados no código
+-- ----- ----- -----
+
+Aula 30 Palavras reservadas
+
+Algumas palavras são reservadas da linguagem e já tem suas 
+funcionalidades definidas, então não podemos utilizar em nossos 
+programas;
+● Pois caso fosse possível poderíamos substituir a sua função original;
+● Alguns exemplos são: echo, insteadof, else, interface, namespace,pow, 
+__DIR__, __FILE__, endif, print, private, protected, and, require, public, 
+as, break, case, for, finally, switch, throw e etc
+
+-- ----- ----- -----
+Array Associativo
+O array associativo é basicamente um array, porém com chave e valor;
+A estrutura base é a mesma, mas vamos construir dessa maneira:
+$arr = [‘nome’ => ‘Matheus’, idade => 29]
+Chave entre aspas, seta para apontar o valor e valor;
+
+
+-- ----- ----- -----
+
+Aula 43 exercício 6 
+$carro = [
+'tipo' => 'corrida',
+'rodas' => 'cromadas',
+'velocidademaxima' => 300,
+];
+
+$tipo = $carro['tipo'];
+$rodas = $carro['rodas'];
+$velocidademaxima = $carro['velocidademaxima'];
+
+echo "O carro é de $tipo e tem rodas $rodas e chega na velocidade de $velocidademaxima ";
+
+isso vai imprimir no console :O carro é de corrida e tem rodas cromadas e chega na velocidade de 300
+-- ----- ----- -----
+Aula 43 exercício 7
+
+Crie um arquivo PHP;
+Crie um array associativo com características de uma pessoa;
+Desafio: faça um if checando se ela é maior de idade e imprima uma
+mensagem, caso seja; 
+
+<?php
+
+$pessoa = [
+'cabelo' => 'loiro',
+'cor' => 'morena',
+'idade' => 20,
+];
+
+$cabelo = $pessoa['cabelo'];
+$cor = $pessoa['cor'];
+$idade = $pessoa['idade'];
+
+if($idade>=18){
+echo "A pessoa é maior de idade ";
+} else 
+echo "menor de idade"
+?>
+
+isso vai imprimir no console: A pessoa é maior de idade
+
+-- ----- ----- -----
+
+Aula 44 objetos
+
+PHP possui o paradigma de orientação a objetos;
+Podemos criar classes e objetos, e o objeto é considerado um tipo de
+dado;
+Objetos possuem métodos que são suas ações e propriedades que são
+suas características;
+sempre bom relembrar
+
+-- ----- ----- -----
+
+Sobre as variáveis
+São a forma que temos para declarar um valor e salvá-lo na memória;
+Uma variável em PHP tem o $ na frente do seu nome;
+Ex: $nome = “Matheus”;
+Podemos salvar qualquer tipo de dado;
+Podemos alterar o valor de uma variável no decorrer do programa;
+Podemos imprimir o valor de uma variável com echo;
+
+-- ----- ----- -----
+
+Exercício 8
+Crie um arquivo PHP;
+Crie três variáveis com tipos de dados diferentes;
+Imprima estas variáveis;
+
+<?php
+$numero = 100;
+$nome = 'emanuel';
+$coresConjunto= ['preto', 'branco', 'amarelo', 'azul'];
+
+
+echo  $numero . "\n" ;
+
+echo  $nome . "\n" . "\n";
+
+print_r($coresConjunto);
+
+?>
+
+isso vai imprimir no console:
+100
+emanuel
+
+Array
+(
+    [0] => preto
+    [1] => branco
+    [2] => amarelo
+    [3] => azul
+-- ----- ----- -----
+
+Exercício 9
+Crie um arquivo PHP;
+Crie duas variáveis com números;
+Cria uma terceira com a soma destes dois números;
+Lembrando: a soma pode ser feita com o símbolo +;
+
+<?php
+$a=2;
+$b=6;
+$c = $a + $b;
+echo $c;
+?>
+
+isso vai imprimir no console: 
+8
+
+-- ----- ----- -----
+
+Exercício 10
+● Crie um arquivo PHP;
+● Crie uma operação que utiliza subtração ( - ), divisão ( / ) e multiplicação
+● Armazene todos os valores em variáveis;
+● Imprima o resultado final na tela;
+<?php
+
+// -, /, *
+$a = 10;
+$x = 5;
+$z = 9;
+
+$operacao = ($x - $z) / $a * $z;
+
+echo $operacao;
+isso vai imprimir no console: -3.6
+-4 /10= -0,40
+-0,40 * 9= -3,6
+
+-- ----- ----- -----
+
+
+Exercício 11
+● Crie um arquivo PHP;
+● Teste a expressão “5” * 12;
+● Utilize a função gettype() com o resultado como parâmetro para checar o
+tipo resultante da operação;
+<?php
+
+  $operacao = "5" * 12;
+
+  echo $operacao . "\n" ;;
+
+  echo gettype($operacao) . "\n" ;
+  echo gettype([]) . "\n" ;
+  
+  echo gettype(12.2) . "\n" ;
+
+  echo gettype("teste");
+
+isso vai imprimir no console:
+
+60
+integer
+array
+double
+string
+
+
+-- ----- ----- -----
+
+Exercício 12
+● Crie um arquivo PHP;
+● Crie uma operação com cada um dos operadores básicos;
+● Cada operação deve estar em uma variável diferente;
+● Imprima cada uma das etapas;
+● Ex: soma -> multiplicação -> divisão -> subtração;
+
+<?php
+
+  // +, -, /, *
+  $a = 3;
+  $b = 12;
+
+  $op1 = $a - $b;
+  echo $op1  . "\n";
+ 
+
+  $c = 12.4;
+
+  $op2 = $op1 * $c;
+  echo $op2  . "\n";
+  
+
+  $d = 4.8;
+
+  $op3 = $op2 + $d;
+  echo $op3 . "\n";
+  ;
+
+  $e = 9.2;
+
+  $op4 = $op3 / $e;
+
+  echo $op4  . "\n";
+
+isso vai imprimir no console:
+
+-9
+-111.6
+-106.8
+-11.608695652174
+
+fixar a variável local
+
+-- ----- ----- -----
+
+Exercício 13
+● Crie um arquivo PHP;
+● Teste o operador de resto em duas divisões;
+● Uma não exata e outra exata;
+
+<?php
+
+  $a = 14;
+  $b = 2;
+  $c = 3;
+
+  echo $a % $b;
+  echo "\n";
+  echo $a % $c;
+  echo "\n";
+
+isso vai imprimir no console:
+0
+2
+
+% imprime somente o resto da divisão dos numeros 14/2 da uma divisão exata e não sobra nada portanto 0
+14/3 da um reto de 2
+
+-- ----- ----- -----
+
+Exercício 14
+● Crie um arquivo PHP;
+● Crie uma variável saudação, nome e outra de sobrenome;
+● Imprima com echo a concatenação de saudação, nome e sobrenome;
+<?php
+$boasvindas= "seja bem vindo";
+$nome= "Emanuel";
+
+echo $boasvindas . "\n" .$nome;
+isso 
+isso vai imprimir no console :
+seja bem vindo
+Emanuel
+-- ----- ----- -----
+
+Exercício 15
+● Crie uma operação que retorne falso com igualdade;
+● Crie uma operação que retorne verdadeiro com igualdade;
+<?php
+$a= 4;
+$b= 5;
+$c= 4;
+if($a==$b) {
+  echo "a é igual a b";
+}
+if ($a==$c) {
+  echo "a é igual a c";
+}
+
+isso vai imprimir no console:
+a é igual a c
+
+-- ----- ----- -----
+
+Exercício 16
+● Insira o valor 5 em uma variável, e o valor 3 em outra;
+● Teste os operadores de: igualdade, diferença, idêntico e não idêntico;
+<?php
+$a= 5;
+$b= 3;
+if ($a==$b){
+  echo " a é igual a b ". "\n";
+}
+if ($a!=$b){
+  echo " a é diferente a b " . "\n";
+}
+if ($a===$b){
+  echo " a é idêntico a b ". "\n";
+}
+if ($a!==$b){
+  echo " a não é a b ". "\n";
+}
+
+isso vai imprimir no console :
+a é diferente a b 
+a não é a b
+-- ----- ----- -----
+
+Exercício 17
+● Verifique as seguintes operações com AND;
+● 15 > 5 AND “joão” === “joão”
+● “teste” > 5 AND 1
+● 2 == 3 AND 5 >= 3
+<?php
+
+if (15 > 5 && "joão" === "joão"){
+  echo  "A comparação 1 é verdadeira". "\n";
+}
+if ("teste" > 5 && 1){
+  echo "A comparação 2 é verdadeira" . "\n";
+}
+if (2 == 3 && 5 >= 3){
+  echo "A comparação 3 é verdadeira". "\n";
+}
+
+isso vai imprimir no console:
+A comparação 1 é verdadeira
+A comparação 2 é verdadeira
+
+
+-- ----- ----- -----
+
+Exercício 18
+● Verifique as seguintes operações com OR;
+● 12 < 5 OR “João” === “João”
+● 1 > 5 OR 1
+● 20 === “20” AND 51 >= 31
+OR = ||
+AND = &&
+<?php
+if (12 < 5 || "joão" === "joão"){
+  echo  "A comparação 1 é verdadeira". "\n";
+}
+if (1> 5 || 1){
+  echo "A comparação 2 é verdadeira" . "\n";
+}
+if (20 === "20" && 51 >= 3){
+  echo "A comparação 3 é verdadeira". "\n";
+}
+
+isso vai imprimir no console:
+A comparação 1 é verdadeira
+A comparação 2 é verdadeira
+
+-- ----- ----- -----
+
+Exercício 19
+● Converta os seguintes dados para int com o operador de cast;
+● “testando”
+● 12.9
+● true
+● [1, 2, 3]
+● E veja os resultados
+<?php
+$a= (int) "testando";
+
+$b= (int) 12.9;
+
+$c= (int) [true];
+
+$d= (int) [1, 2, 3];
+isso vai imprimir no console:
+0
+12
+1
+1
+
+-- ----- ----- -----
+
+Exercício 20
+● Atribua dois números a variáveis distintas;
+● Faça uma comparação de menor ou igual com o operador ternário;
+● Imprima resultados para ambas as possibilidades;
+<?php
+$a=10;
+$b=5;
+if ($a>$b){
+  echo " a é maior que b" . "\n";
+} else {
+  echo "b é maior que a " . "\n";
+}
+isso vai imprimir no console:
+a é maior que b
+
+-- ----- ----- -----
+
+Exercício 21
+● Faça as seguintes verificações em estruturas if:
+● 5 é maior que 2?
+● Matheus é diferente de Pedro
+● 12 é menor ou igual a 11
+● Você deve inserir os valores em variáveis;
+<?php
+$a = 5;
+$b = 2;
+if ($a>$b){
+  echo "entrou no if 1". "\n";
+}
+
+$nome = "matheus";
+$nome2 = "pedro";
+
+if ($nome!= $nome2){
+  echo "entrou no if 2". "\n";
+}
+
+$numero = 12;
+$numero2 = 11;
+
+if ($numero>$numero2){
+  echo "entrou no if 3". "\n";
+}
+
+isso vai imprimir no console:
+entrou no if 1
+entrou no if 2
+entrou no if 3
+
+-- ----- ----- -----
+
+Exercício 22
+● Crie variáveis que recebem idades;
+● Cheque se as idades são maiores ou iguais a 18;
+● Se sim, imprima uma mensagem que a pessoa é maior de idade;
+
+Exercício 23
+● Complemente o exercício 22;
+● Insira um else com uma mensagem para as pessoas que são menores de
+idade;
+
+<?php
+$idade1 = 16;
+$idade2 = 22;
+$idade3 = 25;
+$maioridade = 18;
+
+if ($idade1 >= $maioridade){
+  echo "idade1 é maior de idade ". "\n";
+}else{
+  echo "idade1 é menor de idade ". "\n";
+}
+
+if ($idade2 >= $maioridade){
+  echo "idade2 é maior de idade ". "\n";
+}else{
+  echo "idade2 é menor  de idade ". "\n";
+}
+
+if ($idade3 >= $maioridade){
+  echo "idade3 é maior de idade ". "\n";
+}else{
+  echo "idade3 é menor  de idade ". "\n";
+}
+
+?>
+
+isso vai imprimir no console:
+
+idade1 é menor de idade
+idade2 é maior de idade
+idade3 é maior de idade 
+
+
+-- ----- ----- -----
+
+Exercício 24
+● Crie algumas variáveis com tipos de dados diferentes: string, int e
+boolean, por exemplo;
+● Cheque se a variável é um inteiro;
+● Caso sim, apresente uma mensagem confirmando o tipo de dado;
+● Caso não, apresente outra mensagem;
+
+
+
+
