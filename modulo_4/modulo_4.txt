@@ -1,0 +1,98 @@
+## ----- ----- -----
+
+Curso: PHP do zero ao avançado 30H
+Author: Matheus Batisti
+modulo 4 Variáveis
+
+-- ----- ----- -----
+Aula 51 Introdução
+
+Veremos os escopos e como funciona as variáveis
+
+-- ----- ----- -----
+Aula 52 Declarando variáveis
+
+Sobre as variáveis
+São a forma que temos para declarar um valor e salvá-lo na memória;
+Uma variável em PHP tem o $ na frente do seu nome;
+Ex: $nome = “Matheus”;
+Podemos salvar qualquer tipo de dado;
+Podemos alterar o valor de uma variável no decorrer do programa;
+Podemos imprimir o valor de uma variável com echo;
+
+-- ----- ----- -----
+Aula 53 Exercício 8
+
+Crie um arquivo PHP;
+Crie três variáveis com tipos de dados diferentes;
+Imprima estas variáveis;
+-- ----- ----- -----
+Aula 54 Exercício 9
+
+Crie um arquivo PHP;
+Crie duas variáveis com números;
+Cria uma terceira com a soma destes dois números;
+Lembrando: a soma pode ser feita com o símbolo +;
+-- ----- ----- -----
+Aula 55 Variável da variavel
+
+Podemos criar uma variável por meio do nome de outra variável, com 
+um valor diferente;
+● O símbolo para esta função é o $$
+$x = “teste”;
+$$x = 5;
+● Após a execução do código, a variável teste (conteúdo de $x), será criada 
+com o valor 5
+-- ----- ----- -----
+Aula 56 Variável por referência
+
+Podemos criar uma variável com referência a outra;
+O símbolo é =&;
+Se mudamos a variável de referência a referenciada muda o valor e ao 
+contrário também gera a mudança;
+$x = 2;
+$y =& $x
+-- ----- ----- -----
+Aula 57 Variável por escopo
+
+Como em outras linguagens em PHP também temos escopo de variáveis;
+Local: variável declarada em uma função;
+Global: variáveis declaradas fora de funções;
+Static: variável declarada dentro da função, porém o seu valor permanece 
+salvo entre chamadas da função;
+Parâmetros de função: variáveis passadas para uma função, podendo 
+ser utilizadas ao longo da mesma;
+-- ----- ----- -----
+Aula 58 Variável local
+
+A variável local tem seu escopo definido dentro de uma função;
+Ela não é acessível fora da mesma;
+O seu valor sempre é resetado quando a função é finalizada;
+Obs: veremos funções em detalhes futuramente
+-- ----- ----- -----
+Aula 59 Variável Global
+
+A principal característica da variável global é ser declarada fora de 
+funções;
+Por comportamento padrão não são acessíveis dentro de funções;
+Precisamos utilizar a palavra global para isso;
+Essa função da variável global não ser acessível dentro de funções, 
+previne muitos problemas no software
+
+-- ----- ----- -----
+Aula 60 Escopo static
+
+A variável estática é declarada com a instrução static;
+O valor da mesma é mantido e alterado a cada execução de uma 
+função;
+É interessante este comportamento
+-- ----- ----- -----
+Aula 61 Escopo dos parâmetros
+
+Os parâmetros de função também são considerados tipos de variáveis;
+Este recurso nos ajuda a criar funções com valores dinâmicos;
+Podendo alterá-los a cada invocação da mesma;
+Podemos passar mais de um parâmetro para uma função;
+
+-- ----- ----- -----
+Aula 62 conclusão

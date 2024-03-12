@@ -1,0 +1,459 @@
+## ----- ----- -----
+
+Curso: PHP do zero ao avançado 30H
+Author: Matheus Batisti
+modulo 4 Variáveis
+
+-- ----- ----- -----
+Aula 51 Introdução
+
+Veremos os escopos e como funciona as variáveis
+
+-- ----- ----- -----
+Aula 52 Declarando variáveis
+
+Sobre as variáveis
+São a forma que temos para declarar um valor e salvá-lo na memória;
+Uma variável em PHP tem o $ na frente do seu nome;
+Ex: $nome = “Matheus”;
+Podemos salvar qualquer tipo de dado;
+Podemos alterar o valor de uma variável no decorrer do programa;
+Podemos imprimir o valor de uma variável com echo;
+
+-- ----- ----- -----
+Aula 53 Exercício 8
+
+Crie um arquivo PHP;
+Crie três variáveis com tipos de dados diferentes;
+Imprima estas variáveis;
+-- ----- ----- -----
+Aula 54 Exercício 9
+
+Crie um arquivo PHP;
+Crie duas variáveis com números;
+Cria uma terceira com a soma destes dois números;
+Lembrando: a soma pode ser feita com o símbolo +;
+-- ----- ----- -----
+Aula 55 Variável da variavel
+
+Podemos criar uma variável por meio do nome de outra variável, com 
+um valor diferente;
+● O símbolo para esta função é o $$
+$x = “teste”;
+$$x = 5;
+● Após a execução do código, a variável teste (conteúdo de $x), será criada 
+com o valor 5
+-- ----- ----- -----
+Aula 56 Variável por referência
+
+Podemos criar uma variável com referência a outra;
+O símbolo é =&;
+Se mudamos a variável de referência a referenciada muda o valor e ao 
+contrário também gera a mudança;
+$x = 2;
+$y =& $x
+-- ----- ----- -----
+Aula 57 Variável por escopo
+
+Como em outras linguagens em PHP também temos escopo de variáveis;
+Local: variável declarada em uma função;
+Global: variáveis declaradas fora de funções;
+Static: variável declarada dentro da função, porém o seu valor permanece 
+salvo entre chamadas da função;
+Parâmetros de função: variáveis passadas para uma função, podendo 
+ser utilizadas ao longo da mesma;
+-- ----- ----- -----
+Aula 58 Variável local
+
+A variável local tem seu escopo definido dentro de uma função;
+Ela não é acessível fora da mesma;
+O seu valor sempre é resetado quando a função é finalizada;
+Obs: veremos funções em detalhes futuramente
+-- ----- ----- -----
+Aula 59 Variável Global
+
+A principal característica da variável global é ser declarada fora de 
+funções;
+Por comportamento padrão não são acessíveis dentro de funções;
+Precisamos utilizar a palavra global para isso;
+Essa função da variável global não ser acessível dentro de funções, 
+previne muitos problemas no software
+
+-- ----- ----- -----
+Aula 60 Escopo static
+
+A variável estática é declarada com a instrução static;
+O valor da mesma é mantido e alterado a cada execução de uma 
+função;
+É interessante este comportamento
+-- ----- ----- -----
+Aula 61 Escopo dos parâmetros
+
+Os parâmetros de função também são considerados tipos de variáveis;
+Este recurso nos ajuda a criar funções com valores dinâmicos;
+Podendo alterá-los a cada invocação da mesma;
+Podemos passar mais de um parâmetro para uma função;
+
+-- ----- ----- -----
+Aula 62 conclusão
+
+
+
+
+Exercício 10
+● Crie um arquivo PHP;
+● Crie uma operação que utiliza subtração ( - ), divisão ( / ) e multiplicação
+● Armazene todos os valores em variáveis;
+● Imprima o resultado final na tela;
+<?php
+
+// -, /, *
+$a = 10;
+$x = 5;
+$z = 9;
+
+$operacao = ($x - $z) / $a * $z;
+
+echo $operacao;
+isso vai imprimir no console: -3.6
+-4 /10= -0,40
+-0,40 * 9= -3,6
+
+-- ----- ----- -----
+
+
+Exercício 11
+● Crie um arquivo PHP;
+● Teste a expressão “5” * 12;
+● Utilize a função gettype() com o resultado como parâmetro para checar o
+tipo resultante da operação;
+<?php
+
+  $operacao = "5" * 12;
+
+  echo $operacao . "\n" ;;
+
+  echo gettype($operacao) . "\n" ;
+  echo gettype([]) . "\n" ;
+  
+  echo gettype(12.2) . "\n" ;
+
+  echo gettype("teste");
+
+isso vai imprimir no console:
+
+60
+integer
+array
+double
+string
+
+
+-- ----- ----- -----
+
+Exercício 12
+● Crie um arquivo PHP;
+● Crie uma operação com cada um dos operadores básicos;
+● Cada operação deve estar em uma variável diferente;
+● Imprima cada uma das etapas;
+● Ex: soma -> multiplicação -> divisão -> subtração;
+
+<?php
+
+  // +, -, /, *
+  $a = 3;
+  $b = 12;
+
+  $op1 = $a - $b;
+  echo $op1  . "\n";
+ 
+
+  $c = 12.4;
+
+  $op2 = $op1 * $c;
+  echo $op2  . "\n";
+  
+
+  $d = 4.8;
+
+  $op3 = $op2 + $d;
+  echo $op3 . "\n";
+  ;
+
+  $e = 9.2;
+
+  $op4 = $op3 / $e;
+
+  echo $op4  . "\n";
+
+isso vai imprimir no console:
+
+-9
+-111.6
+-106.8
+-11.608695652174
+
+fixar a variável local
+
+-- ----- ----- -----
+
+Exercício 13
+● Crie um arquivo PHP;
+● Teste o operador de resto em duas divisões;
+● Uma não exata e outra exata;
+
+<?php
+
+  $a = 14;
+  $b = 2;
+  $c = 3;
+
+  echo $a % $b;
+  echo "\n";
+  echo $a % $c;
+  echo "\n";
+
+isso vai imprimir no console:
+0
+2
+
+% imprime somente o resto da divisão dos numeros 14/2 da uma divisão exata e não sobra nada portanto 0
+14/3 da um reto de 2
+
+-- ----- ----- -----
+
+Exercício 14
+● Crie um arquivo PHP;
+● Crie uma variável saudação, nome e outra de sobrenome;
+● Imprima com echo a concatenação de saudação, nome e sobrenome;
+<?php
+$boasvindas= "seja bem vindo";
+$nome= "Emanuel";
+
+echo $boasvindas . "\n" .$nome;
+isso 
+isso vai imprimir no console :
+seja bem vindo
+Emanuel
+-- ----- ----- -----
+
+Exercício 15
+● Crie uma operação que retorne falso com igualdade;
+● Crie uma operação que retorne verdadeiro com igualdade;
+<?php
+$a= 4;
+$b= 5;
+$c= 4;
+if($a==$b) {
+  echo "a é igual a b";
+}
+if ($a==$c) {
+  echo "a é igual a c";
+}
+
+isso vai imprimir no console:
+a é igual a c
+
+-- ----- ----- -----
+
+Exercício 16
+● Insira o valor 5 em uma variável, e o valor 3 em outra;
+● Teste os operadores de: igualdade, diferença, idêntico e não idêntico;
+<?php
+$a= 5;
+$b= 3;
+if ($a==$b){
+  echo " a é igual a b ". "\n";
+}
+if ($a!=$b){
+  echo " a é diferente a b " . "\n";
+}
+if ($a===$b){
+  echo " a é idêntico a b ". "\n";
+}
+if ($a!==$b){
+  echo " a não é a b ". "\n";
+}
+
+isso vai imprimir no console :
+a é diferente a b 
+a não é a b
+-- ----- ----- -----
+
+Exercício 17
+● Verifique as seguintes operações com AND;
+● 15 > 5 AND “joão” === “joão”
+● “teste” > 5 AND 1
+● 2 == 3 AND 5 >= 3
+<?php
+
+if (15 > 5 && "joão" === "joão"){
+  echo  "A comparação 1 é verdadeira". "\n";
+}
+if ("teste" > 5 && 1){
+  echo "A comparação 2 é verdadeira" . "\n";
+}
+if (2 == 3 && 5 >= 3){
+  echo "A comparação 3 é verdadeira". "\n";
+}
+
+isso vai imprimir no console:
+A comparação 1 é verdadeira
+A comparação 2 é verdadeira
+
+
+-- ----- ----- -----
+
+Exercício 18
+● Verifique as seguintes operações com OR;
+● 12 < 5 OR “João” === “João”
+● 1 > 5 OR 1
+● 20 === “20” AND 51 >= 31
+OR = ||
+AND = &&
+<?php
+if (12 < 5 || "joão" === "joão"){
+  echo  "A comparação 1 é verdadeira". "\n";
+}
+if (1> 5 || 1){
+  echo "A comparação 2 é verdadeira" . "\n";
+}
+if (20 === "20" && 51 >= 3){
+  echo "A comparação 3 é verdadeira". "\n";
+}
+
+isso vai imprimir no console:
+A comparação 1 é verdadeira
+A comparação 2 é verdadeira
+
+-- ----- ----- -----
+
+Exercício 19
+● Converta os seguintes dados para int com o operador de cast;
+● “testando”
+● 12.9
+● true
+● [1, 2, 3]
+● E veja os resultados
+<?php
+$a= (int) "testando";
+
+$b= (int) 12.9;
+
+$c= (int) [true];
+
+$d= (int) [1, 2, 3];
+isso vai imprimir no console:
+0
+12
+1
+1
+
+-- ----- ----- -----
+
+Exercício 20
+● Atribua dois números a variáveis distintas;
+● Faça uma comparação de menor ou igual com o operador ternário;
+● Imprima resultados para ambas as possibilidades;
+<?php
+$a=10;
+$b=5;
+if ($a>$b){
+  echo " a é maior que b" . "\n";
+} else {
+  echo "b é maior que a " . "\n";
+}
+isso vai imprimir no console:
+a é maior que b
+
+-- ----- ----- -----
+
+Exercício 21
+● Faça as seguintes verificações em estruturas if:
+● 5 é maior que 2?
+● Matheus é diferente de Pedro
+● 12 é menor ou igual a 11
+● Você deve inserir os valores em variáveis;
+<?php
+$a = 5;
+$b = 2;
+if ($a>$b){
+  echo "entrou no if 1". "\n";
+}
+
+$nome = "matheus";
+$nome2 = "pedro";
+
+if ($nome!= $nome2){
+  echo "entrou no if 2". "\n";
+}
+
+$numero = 12;
+$numero2 = 11;
+
+if ($numero>$numero2){
+  echo "entrou no if 3". "\n";
+}
+
+isso vai imprimir no console:
+entrou no if 1
+entrou no if 2
+entrou no if 3
+
+-- ----- ----- -----
+
+Exercício 22
+● Crie variáveis que recebem idades;
+● Cheque se as idades são maiores ou iguais a 18;
+● Se sim, imprima uma mensagem que a pessoa é maior de idade;
+
+Exercício 23
+● Complemente o exercício 22;
+● Insira um else com uma mensagem para as pessoas que são menores de
+idade;
+
+<?php
+$idade1 = 16;
+$idade2 = 22;
+$idade3 = 25;
+$maioridade = 18;
+
+if ($idade1 >= $maioridade){
+  echo "idade1 é maior de idade ". "\n";
+}else{
+  echo "idade1 é menor de idade ". "\n";
+}
+
+if ($idade2 >= $maioridade){
+  echo "idade2 é maior de idade ". "\n";
+}else{
+  echo "idade2 é menor  de idade ". "\n";
+}
+
+if ($idade3 >= $maioridade){
+  echo "idade3 é maior de idade ". "\n";
+}else{
+  echo "idade3 é menor  de idade ". "\n";
+}
+
+?>
+
+isso vai imprimir no console:
+
+idade1 é menor de idade
+idade2 é maior de idade
+idade3 é maior de idade 
+
+
+-- ----- ----- -----
+
+Exercício 24
+● Crie algumas variáveis com tipos de dados diferentes: string, int e
+boolean, por exemplo;
+● Cheque se a variável é um inteiro;
+● Caso sim, apresente uma mensagem confirmando o tipo de dado;
+● Caso não, apresente outra mensagem;
+
+
+
+

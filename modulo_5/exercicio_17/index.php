@@ -1,8 +1,9 @@
-Exercício 17
-● Verifique as seguintes operações com AND;
-● 15 > 5 AND “joão” === “joão”
-● “teste” > 5 AND 1
-● 2 == 3 AND 5 >= 3
+<!-- Exercício 17
+Verifique as seguintes operações com AND;
+15 > 5 AND “joão” === “joão”
+“teste” > 5 AND 1 
+2 == 3 AND 5 >= 3 -->
+
 <?php
 
 if (15 > 5 && "joão" === "joão"){
