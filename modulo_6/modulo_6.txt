@@ -1,0 +1,18 @@
+## ----- ----- -----
+
+Curso: PHP do zero ao avançado 30H
+Author: Matheus Batisti
+modulo 6 Estruturas de controle
+
+-- ----- ----- -----
+Aula 100 Introdução
+-- ----- ----- -----
+Aula 101 a 113 
+falo sobre if , else e switch
+fiz alguns exercicios de if e no final da seção tem algumas funções com if's aninhados de exercicios que fiz
+
+
+
+
+
+
