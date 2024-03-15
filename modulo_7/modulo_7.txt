@@ -1,0 +1,72 @@
+## ----- ----- -----
+
+Curso: PHP do zero ao avançado 30H
+Author: Matheus Batisti
+modulo 6 Estruturas de repetição
+
+-- ----- ----- -----
+Aula 114 Introdução
+Essas estruturas de repetição andam de mãos dadas com as estruturas de controle 
+-- ----- ----- -----
+Aula 115 Estrutura While
+O while é uma estrutura de repetição, pode executar um código n vezes;
+Até satisfazer a sua condição;
+Geralmente é necessário um contador para atingir a condição;
+Exemplo:
+while(condicao) {
+código
+}
+-- ----- ----- -----
+Aula 117 Break
+
+Podemos sair de um loop while antes do seu fim;
+Para isso é necessário adicionar a instrução break;
+Após interpretada, o loop será automaticamente finalizado;
+Geralmente inserimos esta instrução em uma condição if
+
+-- ----- ----- -----
+Aula 122 estrutura do while
+
+O do while é também uma estrutura de repetição;
+Porém menos utilizada que o while;
+A sintaxe é invertida, veja um exemplo:
+do {
+codigo
+} while(condicao)
+-- ----- ----- -----
+Aula 123 estrutura do for
+
+A for é com certeza a estrutura de repetição mais utilizada;
+Sua sintaxe é mais organizada, em apenas uma linha e aparenta ser 
+mais difícil, ao primeiro olhar;
+Exemplo:
+for(contador; condicao; incremento) {
+codigo
+}
+-- ----- ----- -----
+Aula 127 loop infinito
+
+O loop infinito é um erro que pode ser ocasionado quando uma estrutura 
+de repetição não tem uma condição de término que seja possível;
+Por exemplo: x > 10 e a variável de referência tem um decremento, não 
+um incremento;
+Isso vai fazer o software travar, e pode ser um grande problema caso 
+usuários estejam acessando o mesmo
+
+-- ----- ----- -----
+Aula 128 foreach
+
+A foreach também é uma estrutura de repetição;
+Porém ela é orientada a um array, devemos utilizar um para que a 
+estrutura repita em todos os elementos do mesmo;
+Exemplo:
+foreach($array as $item) {
+codigo
+}
+-- ----- ----- -----
+Aula 129 conclusão
+
+
+
+
+
