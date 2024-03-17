@@ -1,0 +1,15 @@
+## ----- ----- -----
+
+Curso: PHP do zero ao avançado 30H
+Author: Matheus Batisti
+modulo 8 inclusão de código
+
+-- ----- ----- -----
+Aula 130 a 137
+Em PHP, include e require são instruções usadas para inserir o conteúdo de um arquivo PHP em outro, facilitando a reutilização de código. A principal diferença entre eles é o comportamento diante de erros: include gera um aviso (E_WARNING) e continua a execução do script se o arquivo não for encontrado, enquanto require gera um erro fatal (E_COMPILE_ERROR) e interrompe a execução. Ambos possuem variantes, include_once e require_once, que garantem que o arquivo seja incluído apenas uma vez, prevenindo a redeclaração de funções, classes ou re-inclusão de código.
+-- ----- ----- -----
+
+
+
+
+
