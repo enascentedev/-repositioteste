@@ -2,69 +2,39 @@
 
 Curso: PHP do zero ao avançado 30H
 Author: Matheus Batisti
-modulo 6 Estruturas de repetição
+modulo 9 Funções
 
 -- ----- ----- -----
-Aula 114 Introdução
-Essas estruturas de repetição andam de mãos dadas com as estruturas de controle 
--- ----- ----- -----
-Aula 115 Estrutura While
-O while é uma estrutura de repetição, pode executar um código n vezes;
-Até satisfazer a sua condição;
-Geralmente é necessário um contador para atingir a condição;
-Exemplo:
-while(condicao) {
-código
+Aula 138 a 150 Introdução
+
+O que são funções?
+São blocos de códigos que possuem nomes;
+Realizam uma ação e podem ser reaproveitadas ( chamadas 
+novamente ) ao longo do programa;
+Podemos passar parâmetros para funções, que moldam a sua execução;
+A criação de funções reduz a duplicidade de código;
+E também melhora a manutenção do mesmo;
+O PHP possui diversas funções prontas, que podemos utilizar
+ex:
+// Define a função com dois parâmetros: nome e idade
+function apresentacao($nome, $idade) {
+  // Imprime a mensagem com os valores recebidos
+  echo "Olá, eu sou o $nome e tenho $idade anos";
 }
--- ----- ----- -----
-Aula 117 Break
 
-Podemos sair de um loop while antes do seu fim;
-Para isso é necessário adicionar a instrução break;
-Após interpretada, o loop será automaticamente finalizado;
-Geralmente inserimos esta instrução em uma condição if
+// Exemplo de como chamar a função
+apresentacao("João", 25);
 
--- ----- ----- -----
-Aula 122 estrutura do while
+ex: usando return
 
-O do while é também uma estrutura de repetição;
-Porém menos utilizada que o while;
-A sintaxe é invertida, veja um exemplo:
-do {
-codigo
-} while(condicao)
--- ----- ----- -----
-Aula 123 estrutura do for
-
-A for é com certeza a estrutura de repetição mais utilizada;
-Sua sintaxe é mais organizada, em apenas uma linha e aparenta ser 
-mais difícil, ao primeiro olhar;
-Exemplo:
-for(contador; condicao; incremento) {
-codigo
+// Define a função com um parâmetro: numero
+function aoQuadrado($numero) {
+  // Retorna o valor do número ao quadrado
+  return $numero * $numero;
 }
--- ----- ----- -----
-Aula 127 loop infinito
+// Exemplo de como chamar a função e imprimir o resultado
+echo aoQuadrado(4); // Imprime 16
 
-O loop infinito é um erro que pode ser ocasionado quando uma estrutura 
-de repetição não tem uma condição de término que seja possível;
-Por exemplo: x > 10 e a variável de referência tem um decremento, não 
-um incremento;
-Isso vai fazer o software travar, e pode ser um grande problema caso 
-usuários estejam acessando o mesmo
-
--- ----- ----- -----
-Aula 128 foreach
-
-A foreach também é uma estrutura de repetição;
-Porém ela é orientada a um array, devemos utilizar um para que a 
-estrutura repita em todos os elementos do mesmo;
-Exemplo:
-foreach($array as $item) {
-codigo
-}
--- ----- ----- -----
-Aula 129 conclusão
 
 
 
