@@ -535,6 +535,99 @@ boolean, por exemplo;
 ● Caso sim, apresente uma mensagem confirmando o tipo de dado;
 ● Caso não, apresente outra mensagem;
 
+<?php
+$a=12;
+$b= '';
+$c= [];
+
+if (is_int($a)) {
+  echo ' é um inteiro' . "\n";
+} else{
+  echo 'não é um inteiro'. "\n";
+}
+
+if (is_int($b)) {
+  echo ' é um inteiro'. "\n";
+} else{
+  echo 'não é um inteiro'. "\n";
+}
+if (is_int($c)) {
+  echo ' é um inteiro'. "\n";
+} else{
+  echo 'não é um inteiro'. "\n";
+}
+
+isso vai imprimir no console:
+é um inteiro
+não é um inteiro
+não é um inteiro
+
+Exercício 24 b
+● Crie uma variável que recebe um peso;
+● Caso seja maior que 80, imprima a mensagem que está pesado demais;
+● Se não, prima “Peso dentro do limite;
+
+<?php
+$a= 90;
+
+if ($a>80){
+  echo 'está pesado demais';
+}else{
+  echo 'peso dentro do limite';
+}
+
+isso vai imprimir no console:
+está pesado demais
+
+Exercício 25
+● Crie variáveis com números e outras com string;
+● Faça um if checando se é um número;
+● Caso for, atribua a multiplicação deste número por 2 em outra variável;
+● E crie um outro if, que checa se o novo número é maior que 100;
+● Se sim, imprima uma mensagem;
+
+<?php
+$a=10;
+$b=60;
+$c= 'teste';
+
+if (is_int($a) ||is_float($a) ) {
+  $mult= $a*2;
+  if ($mult > 100){
+    echo 'a multiplicação é maior que 100'. "\n";
+  } else {
+    echo 'a multiplicação não é maior que 100'. "\n";
+  }
+} else {
+  echo 'não é um número'. "\n";
+}
+
+if (is_int($b) ||is_float($b) ) {
+  $mult= $b*2;
+  if ($mult > 100){
+    echo 'a multiplicação é maior que 100'. "\n";
+  } else {
+    echo 'a multiplicação não é maior que 100'. "\n";
+  }
+} else {
+  echo 'não é um número'. "\n";
+}
+
+if (is_int($c) ||is_float($c) ) {
+  $mult= $c*2;
+  if ($mult > 100){
+    echo 'a multiplicação é maior que 100'. "\n";
+  } else {
+    echo 'a multiplicação não é maior que 100'. "\n";
+  }
+} else {
+  echo 'não é um número'. "\n";
+}
+
+isso vai imprimir no console:
+a multiplicação não é maior que 100
+a multiplicação é maior que 100
+não é um número
 
 
 
