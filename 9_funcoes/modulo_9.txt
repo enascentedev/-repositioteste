@@ -1,0 +1,42 @@
+## ----- ----- -----
+
+Curso: PHP do zero ao avançado 30H
+Author: Matheus Batisti
+modulo 9 Funções
+
+-- ----- ----- -----
+Aula 138 a 150 Introdução
+
+O que são funções?
+São blocos de códigos que possuem nomes;
+Realizam uma ação e podem ser reaproveitadas ( chamadas 
+novamente ) ao longo do programa;
+Podemos passar parâmetros para funções, que moldam a sua execução;
+A criação de funções reduz a duplicidade de código;
+E também melhora a manutenção do mesmo;
+O PHP possui diversas funções prontas, que podemos utilizar
+ex:
+// Define a função com dois parâmetros: nome e idade
+function apresentacao($nome, $idade) {
+  // Imprime a mensagem com os valores recebidos
+  echo "Olá, eu sou o $nome e tenho $idade anos";
+}
+
+// Exemplo de como chamar a função
+apresentacao("João", 25);
+
+ex: usando return
+
+// Define a função com um parâmetro: numero
+function aoQuadrado($numero) {
+  // Retorna o valor do número ao quadrado
+  return $numero * $numero;
+}
+// Exemplo de como chamar a função e imprimir o resultado
+echo aoQuadrado(4); // Imprime 16
+
+
+
+
+
+

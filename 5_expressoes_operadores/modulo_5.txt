@@ -1,0 +1,286 @@
+## ----- ----- -----
+
+Curso: PHP do zero ao avançado 30H
+Author: Matheus Batisti
+modulo 5 Expressões e Operadores
+
+-- ----- ----- -----
+Aula 63 Introdução
+
+Veremos linhas mais complexos compondo uma lógica de um programa
+
+-- ----- ----- -----
+Aula 64 O que são expressões de código
+
+Uma instrução de código que será avaliada e resultará em um valor;
+Uma simples impressão de um texto é uma expressão;
+Uma soma ou operação matemática mais complexa também;
+Na programação realizaremos diversas expressões durante nosso 
+código, para formar nosso software
+
+-- ----- ----- -----
+Aula 65 O que é um operador
+
+Operadores são recursos que utilizamos para compor expressões mais complexas;
+Alguns deles: +, -, **, /, ++, >, <, >=, <= e etc…
+Estas operações podem matemáticas ou até mesmo comparações;
+A ideia principal é que um novo valor é gerado ou também um booleano 
+pode ser retorna
+-- ----- ----- -----
+Aula 66 Ordem dos operadores
+
+O PHP e as linguagens de programação executam os operadores na 
+mesma ordem que na matemática;
+Ou seja em: 2 + 2 * 4, teremos o resultado de 10;
+Pois a multiplicação é avaliada antes da soma;
+Mesmo que a primeira operação seja soma;
+Podemos utilizar ( ) para separar operações;
+
+-- ----- ----- -----
+Aula 67 Exercício 10
+
+Crie um arquivo PHP;
+Crie uma operação que utiliza subtração ( - ), divisão ( / ) e multiplicação
+Armazene todos os valores em variáveis;
+Imprima o resultado final na tela;
+
+-- ----- ----- -----
+Aula 68 Mudança de tipo implícita
+
+O PHP em certas operações muda o tipo de dado de forma implícita;
+Por exemplo 5 / 2 = 2.5 (gera um float)
+E 5 . 5 resulta em 55 (gera uma string, o . é o operador de concatenação)
+Por isso, temos que tomar cuidado com algumas expressões que podem 
+gerar resultados indesejados;
+Este recurso é chamado de auto cast;
+
+-- ----- ----- -----
+Aula 69 Exercicio 11
+
+Crie um arquivo PHP;
+Teste a expressão “5” * 12;
+Utilize a função gettype() com o resultado como parâmetro para checar o 
+tipo resultante da operação
+-- ----- ----- -----
+Aula 70 Operadores aritméticos
+
+Temos os operadores básicos da matemática em PHP;
+Soma: +
+Subtração: -
+Divisão: /
+Multiplicação: 
+-- ----- ----- -----
+Aula 71 Exercicio 12
+
+Crie um arquivo PHP;
+Crie uma operação com cada um dos operadores básicos;
+Cada operação deve estar em uma variável diferente;
+Imprima cada uma das etapas;
+Ex: soma -> multiplicação -> divisão -> subtração;
+-- ----- ----- -----
+Aula 72 Operador de módulo
+
+O operador de módulo é inserido no código pelo símbolo de %
+Sua função é realizar uma divisão;
+Mas como resultado ele apresenta apenas o resto da mesma
+-- ----- ----- -----
+Aula 73 Exercicio 13
+
+Crie um arquivo PHP;
+Teste o operador de resto em duas divisões;
+Uma não exata e outra exata;
+
+-- ----- ----- -----
+Aula 74 Operadores de exponenciação
+
+Podemos realizar o cálculo de potência com o símbolo **;
+Exemplo: 5 ** 2;
+Desta maneira teremos o resultado de 5 elevado a 2;
+-- ----- ----- -----
+Aula 75 Operadores de concatenação
+
+Em PHP podemos concatenar valores com . (ponto)
+Concatenar é o ato de juntar vários textos e/ou números em apenas 
+uma string;
+Não há limites de quantas expressões podem ser concatenadas;
+-- ----- ----- -----
+Aula 76 Exercício 14
+
+Crie um arquivo PHP;
+Crie uma variável saudação, nome e outra de sobrenome;
+Imprima com echo a concatenação de saudação, nome e sobrenome;
+-- ----- ----- -----
+Aula 77 Operador de incremento e auto decremento
+
+Podemos incrementar um valor ou decrementar com os operadores: ++ e 
+--;
+Exemplo: $n++ ou $x--
+Onde n e x são variáveis, e terão seus valores alterados com +1 e -1;
+Estes operadores são muito utilizados em estruturas de repetição;
+-- ----- ----- -----
+Aula 78 O que são Operadores de comparação
+
+As operações com operadores de comparação resultarão em true or false;
+Igualdade: ==
+Idêntico a: ===
+Diferença: !=
+Não idêntico a: !==
+Maior e maior ou igual a: > e >=
+Menor e menor ou igual a: < e <
+-- ----- ----- -----
+Aula 79 comparação de igualdade
+
+Com o operador de igualdade verificamos se um valor é igual ao outro;
+O símbolo é: ==
+Exemplo: 5 == 4 # false
+Exemplo: 3 == 3 # true
+-- ----- ----- -----
+Aula 80 Exercício 15
+
+Crie uma operação que retorne falso com igualdade;
+Crie uma operação que retorne verdadeiro com igualdade;
+-- ----- ----- -----
+Aula 81 Operador idêntico a
+
+Com o operador idêntico a verificamos se um valor é igual ao outro, 
+avaliando o seu tipo também;
+O símbolo é: ===
+Exemplo: 5 === 5 # true
+Exemplo: 3 === “3” # false
+-- ----- ----- -----
+Aula 82 Operador de diferença
+
+Com o operador de diferença verificamos se um valor é diferente de 
+outro;
+O símbolo é: !=
+Exemplo: 5 != 5 # false
+Exemplo: 10 != 5 # true
+-- ----- ----- -----
+Aula 83 Operador não idêntico a
+
+Com o operador não idêntico a verificamos se um valor é diferente de 
+outro, avaliando o seu tipo também;
+O símbolo é: !==
+Exemplo: 5 !== 4 # false
+Exemplo: 3 !== “3” # true
+-- ----- ----- -----
+Aula 84 Exercício 16
+
+Insira o valor 5 em uma variável, e o valor 3 em outra;
+Teste os operadores de: igualdade, diferença, idêntico e não idêntico;
+-- ----- ----- -----
+Aula 85 Operador maior e maior ou igual
+
+Com o operador maior que verificamos se um valor é maior que outro;
+O símbolo é: >
+Exemplo: 5 > 4 # true
+Com o operador maior ou igual a verificamos se um valor é maior ou 
+igual a outro;
+O símbolo é: >=
+Exemplo: 5 >= 5 # tru
+-- ----- ----- -----
+Aula 86 Operador menor e menor ou igual
+
+Com o operador menor que verificamos se um valor é menor que outro;
+O símbolo é: <
+Exemplo: 5 < 4 # false
+Com o operador menor ou igual a verificamos se um valor é menor ou 
+igual a outro;
+O símbolo é: <=
+Exemplo: 11 <= 12 # true
+-- ----- ----- -----
+Aula 87 O que são Operadores lógicos
+
+Com os operadores lógicos podemos encadear várias comparações;
+Operador AND: &&
+Operador OR: ||
+Operador NOT: 
+-- ----- ----- -----
+Aula 88 Tabela verdade
+
+-- ----- ----- -----
+Aula 89 Operador And
+
+Os operadores lógicos em conjunto dos de comparação também 
+retornam uma booleano (true ou false);
+No caso de AND temos true apenas quando as duas comparações são 
+verdadeiras;
+Símbolo: &&
+Ex: 5 > 2 && 10 < 100 # tru
+-- ----- ----- -----
+Aula 90 Exercício 17
+
+Verifique as seguintes operações com AND;
+15 > 5 AND “joão” === “joão”
+“teste” > 5 AND 1
+2 == 3 AND 5 >= 3
+-- ----- ----- -----
+Aula 91 Operador Or
+
+O operador lógico OR resulta em verdadeiro caso qualquer um dos 
+lados da operação seja verdadeiro;
+E só resulta em falso caso os dois lados sejam falsos;
+Símbolo: ||
+Exemplo: 5 > 15 || “teste” == “teste” # true
+-- ----- ----- -----
+Aula 92 Exercício 18
+
+Verifique as seguintes operações com OR;
+12 < 5 OR “João” === “João”
+1 > 5 OR 1
+20 === “20” AND 51 >= 31
+OR = ||
+AND = &&
+-- ----- ----- -----
+Aula 93 Operador NOT
+
+O operador lógico NOT apenas inverte o resultado booleano de uma 
+operação, se é true vira false e se é false vira true;
+Símbolo: !
+Exemplo: !true # false
+Exemplo: !(5 > 2) # false
+-- ----- ----- -----
+Aula 94 Operador cast
+
+Com os operadores de conversão podemos forçar uma variável ser de 
+um determinado tipo;
+Nem todos são úteis, os mais utilizados são para converter uma string 
+em número;
+Operadores: int, bool, float, string, array, object e unset;
+Exemplo: $a = (float) “5.34243” # string é convertida para float
+-- ----- ----- -----
+Aula 95 Exercício 19
+
+Converta os seguintes dados para int com o operador de cast;
+“testando”
+12.9
+true
+[1, 2, 3]
+E veja os resultados
+-- ----- ----- -----
+Aula 96 Operador de atribuição
+
+Com estes operadores podemos atribuir valor a uma variável;
+O mais conhecido é o =, porém temos algumas variações do mesmo;
+Operadores: +=, -=, /=, *= e %=;
+Cada um destes fará uma operação antes da atribuição;
+-- ----- ----- -----
+Aula 97 Operador ternário
+
+Este operador constitui uma estrutura de condição resumida;
+Na maioria dos casos vamos optar por if/else;
+Porém em situações simples podemos utilizar o ternário;
+Exemplo: 5 > 2 ? echo “5 é maior que dois” : echo “5 é menor que 2”
+A primeira interrogação vem antes da comparação;
+E o : é utilizado para uma segunda situação, caso a primeira seja falsa;
+
+-- ----- ----- -----
+Aula 98 Exercício 20
+
+Atribua dois números a variáveis distintas;
+Faça uma comparação de menor ou igual com o operador ternário;
+Imprima resultados para ambas as possibilidades;
+-- ----- ----- -----
+Aula 99 conclusão
+
+Vimos todos os operadores e expressões do PHP

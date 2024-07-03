@@ -1,0 +1,206 @@
+## ----- ----- -----
+
+Curso: PHP do zero ao avançado 30H
+Author: Matheus Batisti
+modulo 12 orientação a objetos
+
+-- ----- ----- -----
+Aula 217  Introdução
+-- ----- ----- -----
+Aula 218 
+O que são objetos?
+Objetos são entidades que possuem comportamentos e características;
+As características são conhecidas como propriedades (variáveis);
+Os comportamentos como métodos (funções);
+Os objetos interagem entre si e sistemas são escritos orientados a objetos 
+(paradigma de Orientação a Objetos);
+No PHP podemos desenvolver neste paradigma;
+-- ----- ----- -----
+Aula 219 
+O que são classes?
+Classes são os “pais” dos objetos;
+Em PHP sempre que vamos criar ou instanciar um objeto vamos precisar 
+de uma classe;
+A classe contém o molde do objeto, ou seja, seus métodos e suas 
+propriedades;
+Podemos mudar o valor para cada objeto criado, mas ele parte do que a 
+classe impõe;
+-- ----- ----- -----
+Aula 220
+Declarando uma classe
+Para iniciar uma classe vamos precisar da palavra reservada class, e 
+também dar um nome para a classe;
+Por convenção, a inicial do nome é sempre em maiúscula, ex: User;
+Como é um bloco de código, a classe é envolvida por { };
+Exemplo:
+class User {
+}
+-- ----- ----- -----
+Aula 221
+Instanciando objeto
+Para instanciar um objeto vamos utilizar a palavra new em conjunto do 
+nome da classe;
+A partir daí uma entidade com as características da classe será criada;
+Normalmente encapsulamos este valor em uma variável;
+Exemplo:
+$matheus = new User;
+-- ----- ----- -----
+Exercício 52
+Crie uma classe Car;
+Instancie três objetos com esta classe;
+-- ----- ----- -----
+Aula 223
+Declarando métodos
+Para declarar um método vamos utilizar a sintaxe de function, porém 
+dentro de uma class;
+O restante é exatamente igual a sintaxe de função;
+Podemos retornar ou imprimir dados, dependendo da nossa regra de 
+negócios;
+-- ----- ----- -----
+Exercício 53
+Crie uma classe Cachorro;
+Crie o método latir e andar;
+Execute o método em novas instâncias da classe;
+-- ----- ----- -----
+Aula 225
+Declarando propriedades
+Para declarar propriedades vamos basicamente criar uma variável dentro 
+de uma class;
+Porém precisamos definir a sua privacidade, como por exemplo public;
+Uma propriedade pública pode ser acessada fora do escopo do objeto;
+Exemplo:
+public $idade = 29;
+-- ----- ----- -----
+Exercício 54
+Crie uma classe Pessoa;
+Crie a propriedade nome e idade;
+E também um método andar;
+-- ----- ----- -----
+Aula 227
+Conhecendo o $this
+O $this se refere a instância atual do objeto;
+Podendo assim alterar um valor de uma propriedade do objeto com: 
+$this->proriedade = “x”;
+Tradução literal = este;
+Podemos invocar um método do objeto com this também;
+-- ----- ----- -----
+Exercício 55
+Crie uma classe Carro;
+Crie algumas propriedades e também a propriedade velocidade_maxima;
+Crie o método setVelocidadeMaxima, onde é possível alterar a velocidade 
+máxima do carro;
+e também o getVelocidadeMaxima onde é possível imprimir a velocidade 
+do carro;
+-- ----- ----- -----
+Aula 229
+Constantes em classes
+As constantes são parecidas com variáveis, salvam valores em 
+memória;
+Porém o seu valor não pode ser alterado;
+Exemplo de sintaxe:
+public const CHAVE_API = “ASO793mJJs39”;
+
+-- ----- ----- -----
+Aula 230
+Visibilidade
+Temos três formatos de visibilidade: public, protected e private;
+public: A propriedade ou método pode ser acessada de qualquer forma;
+protected: A propriedade ou método pode ser acessada apenas pela 
+classe de origem ou as que recebem a mesma de herança;
+private: a propriedade ou método pode ser acessada apenas pela classe 
+que foi criada;
+-- ----- ----- -----
+Aula 231
+Herança
+A herança é o recurso da OOP que dá a possibilidade de uma classe 
+herdar métodos e propriedades de outra;
+A palavra reservada é extends;
+Exemplo:
+class Programador extends Pessoa {
+}
+-- ----- ----- -----
+Exercício 56
+Crie uma classe Humano com algumas propriedades e o método falar;
+Crie uma outra classe Professor que herda de humano, crie também as 
+propriedades e métodos particulares desta classe;
+Exiba os valores das propriedades da classe pai e também utilize os 
+métodos;
+-- ----- ----- -----
+Aula 233
+Checando ancestralidade
+Para checar a ancestralidade de uma classe utilizamos o operador 
+instanceof;
+Podemos inserir essa operação em um if, pois vai retornar um booleano;
+Exemplo:
+$objeto instanceof Humano
+-- ----- ----- -----
+Aula 234
+Interfaces
+As interfaces criam um modelo de definição de uma classe;
+Então toda classe que implementar uma interface, deverá implementar 
+também suas propriedades e métodos, obrigatoriamente;
+A palavra reservada é implements;
+Exemplo:
+class Humano implements Caracteristicas
+-- ----- ----- -----
+Aula 235
+Traits
+As traits permitem o reuso do código sem hierarquia de classes, ou seja, 
+sem herança;
+Podemos assim utilizar os métodos da classe que foi feita a trait;
+Utilizamos a palavra reservada use;
+Exemplo;
+class Teste {
+use ClasseTrait
+-- ----- ----- -----
+Aula 236
+Classes abstratas
+As classes abstratas não podem ser instanciadas;
+Podemos ter métodos abstratos, que devem ser implementados 
+obrigatoriamente se uma classe herdar a abstrata;
+A palavra reservada tanto para classes como para métodos é abstract;
+Exemplo:
+abstract class ClasseAbstrata { }
+-- ----- ----- -----
+Aula 237
+Construtores
+Pelos construtores podemos inicializar objetos com valores de 
+propriedades únicos para cada objeto;
+Passamos como argumentos os valores das propriedades;
+Exemplo:
+function __construct($portas, $motor, $teto_solar) {
+}
+-- ----- ----- -----
+Exercício 57
+Crie uma classe Cachorro com propriedades;
+Inicie as propriedades via constructor;
+Crie um método para exibir cada um das propriedades que você criou
+-- ----- ----- -----
+Aula 239
+Classes anônimas
+As classes anônimas são criadas em uma variável e não possuem nome;
+Elas funcionam como qualquer outra classe;
+Precisamos fechar ela com “;”
+Exemplo:
+$anonima = new class() { };
+-- ----- ----- -----
+Aula 240
+Verificando classes
+Em PHP temos alguns métodos que nos ajudam a entender as classes;
+class_exists() => verifica se uma classe existe;
+get_class_methods() => verifica os métodos de uma classe;
+get_class_vars() => mapeamento das propriedades de uma classe; 
+-- ----- ----- -----
+Aula 241
+Verificando objetos
+Em PHP temos alguns métodos que nos ajudam a entender melhor os 
+objetos;
+is_object() => verifica se uma variável é um objeto;
+get_class() => verifica a classe de um objeto;
+method_exists() => verifica se um método existe em um objeto;
+
+
+
+
+
+

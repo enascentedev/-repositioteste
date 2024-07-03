@@ -1,0 +1,142 @@
+## ----- ----- -----
+
+Curso: PHP do zero ao avançado 30H
+Author: Matheus Batisti
+modulo 3 Tipos de dados
+
+-- ----- ----- -----
+Aula 32 Introdução seção
+
+Esse módulo vai falar sobre os tipos de dados do php inteiros, float, strings, boolean, arrays e objetos
+-- ----- ----- -----
+Aula 33 Numeros inteiros
+
+Podemos validar se um dado é inteiro com a função is_int();
+Caso um número seja inteiro, será retornado true ( um outro tipo de dado);
+Caso não seja, receberemos um retorno de false ( tipo de dado também );
+Precisamos utilizar uma estrutura if para validar o valor
+-- ----- ----- -----
+Aula 34 exercicio
+
+Crie um arquivo PHP;
+Imprima três números inteiros;
+-- ----- ----- -----
+Aula 35 Verificando se dado é inteiro
+
+Podemos validar se um dado é inteiro com a função is_int();
+Caso um número seja inteiro, será retornado true ( um outro tipo de dado);
+Caso não seja, receberemos um retorno de false ( tipo de dado também );
+Precisamos utilizar uma estrutura if para validar o valor;
+-- ----- ----- -----
+Aula 36 Floats
+
+Os floats são todos os números com casas decimais;
+Como o padrão universal é da língua inglesa, temos a separação de casas 
+com . e não ,
+Exemplos de floats: 2.123, 0.04, -12.8
+-- ----- ----- -----
+Aula 37 Verificando se um numero é float
+
+Podemos utilizar a função is_float() para verificar se um dado é um float;
+A função recebe um valor como parâmetro;
+Novamente receberemos true or false, dependendo do dado enviado;
+Precisamos utilizar uma estrutura if para validar o valor;
+
+-- ----- ----- -----
+Aula 38 exercicio modulo_3/exercicio_3
+
+Crie um arquivo PHP;
+Imprima três floats;
+Utilize a função is_float em um deles
+
+-- ----- ----- -----
+Aula 39 Textos (strings)
+
+Os textos são conhecidos como strings;
+Em PHP podemos escrever textos em aspas simples ou duplas, não há 
+diferença para texto puro;
+As aspas duplas interpretam variáveis
+
+-- ----- ----- -----
+Aula 40 Verificando se dado é string
+
+Podemos utilizar a função is_string() para verificar se um dado é uma 
+string;
+A função recebe um valor como parâmetro;
+Novamente receberemos true or false, dependendo do dado enviado;
+Precisamos utilizar uma estrutura if para validar o valor;
+-- ----- ----- -----
+Aula 41 exercicio modulo_3/exercicio_5
+Crie um arquivo PHP;
+Imprima textos com aspas duplas e também com aspas simples
+
+-- ----- ----- -----
+Aula 42 Boolean
+O boolean é um tipo de dado que só possui dois valores:
+True - verdadeiro;
+False - falso;
+Alguns valores são considerados como falsos: 0, 0.0, “0”, [ ], NULL
+-- ----- ----- -----
+Aula 43 Checando se dado é Boolean
+Podemos utilizar a função is_boolean() para verificar se um dado é um 
+boolean;
+A função recebe um valor como parâmetro;
+Novamente receberemos true or false, dependendo do dado enviado;
+Precisamos utilizar uma estrutura if para validar o valor;
+
+-- ----- ----- -----
+Aula 44 Array
+
+O array é um tipo de dado que serve para agrupar um conjunto de 
+valores;
+Podemos inserir qualquer tipo de dado na lista;
+A sintaxe é: [1, 2, 3, 4, 5];
+Sempre entre [ ], dados separados por ,
+Veremos arrays em mais detalhes futuramente, é uma estrutura de dados 
+muito importante e muito utilizada
+-- ----- ----- -----
+Aula 45 Array associativo
+
+O array associativo é basicamente um array, porém com chave e valor;
+A estrutura base é a mesma, mas vamos construir dessa maneira:
+$arr = [‘nome’ => ‘Matheus’, idade => 29]
+Chave entre aspas, seta para apontar o valor e valor;
+
+-- ----- ----- -----
+Aula 46 exercício 6 
+Crie um arquivo PHP;
+Crie um array com características de um carro;
+Imprima duas características
+
+-- ----- ----- -----
+Aula 47 exercício 7
+
+Crie um arquivo PHP;
+Crie um array associativo com características de uma pessoa;
+Desafio: faça um if checando se ela é maior de idade e imprima uma
+mensagem, caso seja; 
+-- ----- ----- -----
+Aula 48 objetos
+
+PHP possui o paradigma de orientação a objetos;
+Podemos criar classes e objetos, e o objeto é considerado um tipo de
+dado;
+Objetos possuem métodos que são suas ações e propriedades que são
+suas características;
+sempre bom relembrar
+-- ----- ----- -----
+Aula 49 Tipo de dado Null
+
+O tipo de dado Null tem apenas um valor, o NULL;
+Um caso de uso do Null seria checar se uma variável tem ou não valor;
+Podemos checar se um valor é null com is_null();
+-- ----- ----- -----
+Aula 50 Conclusão
+
+Foi visto todos os tipos de dados possíveis no PHP
+-- ----- ----- -----
+
+
+
+
+

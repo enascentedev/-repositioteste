@@ -1,0 +1,215 @@
+## ----- ----- -----
+
+Curso: PHP do zero ao avançado 30H
+Author: Matheus Batisti
+modulo 11 Arrays
+
+-- ----- ----- -----
+Aula 185  Introdução
+-- ----- ----- -----
+Aula 186
+Adicionando dados a um array
+● Podemos criar novos índices com dados em um array;
+● Basta por o nome do array com o novo índice em colchetes e atribuir um 
+valor;
+● Ex: $arr[1] = “teste”;
+● E em arrays associativos basta utilizar o nome da nova chave com a 
+atribuição de valor;
+
+-- ----- ----- -----
+Aula 187 Adicionando valor ao fim do array
+● Podemos adicionar valor ao fim de um array utilizando a atribuição sem 
+determinar um índice;
+● Então o valor atribuído será enviado para o último e novo índice do array;
+● Exemplo: $arr[] = 5;
+-- ----- ----- -----
+Aula 188 Criar array rapidamente
+● Podemos utilizar a função range para criar um array de forma rápida;
+● Exemplo: range(1, 10);
+● Um array de 1 a 10 será criado, podemos atribuir este valor a uma 
+variável;
+-- ----- ----- -----
+Aula 189 Exercício 45
+
+● Crie um array com a função range de 10 a 45;
+● Imprima todos os números com uma soma de 6;
+● Se passar de 30 a soma, imprima também que o número é muito alto;
+-- ----- ----- -----
+Aula 190 Número de elementos
+
+● Podemos obter o número de elementos de um array com a função count;
+● Basta passar o array como argumento;
+● Um inteiro será retornado;
+-- ----- ----- -----
+Aula 191 Array multidimensional
+
+● Quando inserimos arrays dentro de arrays formamos um array 
+multidimensional, também conhecido como matriz;
+● Para acessar este tipo de array também utilizamos índices, acessando o 
+externo e depois os internos;
+● Ex: $arr[1][0] => Primeiro elemento do segundo array;
+-- ----- ----- -----
+Aula 192 Exercício 46
+
+● Crie um array multidimensional com 3 arrays que tem 4 elementos cada;
+● Imprima todos os elementos de cada um dos arrays;
+● Imprima também quando está mudando de array;
+-- ----- ----- -----
+Aula 193 Criando muitas variáveis
+
+● Podemos criar muitas variáveis com base em um array;
+● Para isso vamos utilizar a função list;
+● Ex: list($nome, $idade, $profissao) = $pessoa;
+-- ----- ----- -----
+Aula 194 Exercício 47
+
+● Crie um array com os seguintes valores: jaguar, 3.0, azul, 18, Teto solar, 
+automático;
+● Chame este array de carro;
+● Crie variáveis com base neste array;
+-- ----- ----- -----
+Aula 195 Resgatando elementos de array
+
+● Com a função array_slice podemos resgatar uma faixa de elementos de 
+um array;
+● Passamos 3 parâmetros: o array, índice inicial e quantos elementos 
+queremos resgatar a partir do índice;
+-- ----- ----- -----
+Aula 196 Dividindo arrays
+
+● Podemos dividir um array grande em diversos arrays de número de 
+elementos iguais;
+● Vamos utilizar a função array_chunk;
+● Passamos o array como argumento e também o número de elementos 
+que cada array deve ter;
+-- ----- ----- -----
+Aula 197 Chaves e valores
+
+● Com a função array_keys recebemos um array apenas com as chaves de 
+um array;
+● Com a função array_values recebemos um array com apenas os valores 
+de um array;
+-- ----- ----- -----
+Aula 198 Verificando se valor existe
+
+● Com a função array_key_exists podemos verificar se há um valor em 
+uma respectiva key de um array;
+● Podemos fazer essa checagem em um if;
+● Ex: array_key_exists(“nome”, $arr)
+● Outra função que podemos utilizar para este fim é a isset;
+-- ----- ----- -----
+Aula 199 Removendo elementos
+● Podemos remover elementos de um array com a função array_splice;
+● Passamos como parâmetro o array, índice inicial e quantos elementos 
+queremos remover;
+● Ex: array_splice($arr, 2, 1) => A partir do índice 2, remove 1 elemento;
+-- ----- ----- -----
+Aula 200 Exercício 48
+
+● Crie um array com os valores: batata, maçã, pera, feijão, arroz;
+● Remova pera e feijão;
+-- ----- ----- -----
+Aula 201 Criando variáveis com extract
+
+● Com a função extract podemos criar variáveis rapidamente de arrays 
+associativos;
+● O nome da chave será o nome da variável;
+● Se houver uma variável já criada com o nome da chave, a mesma será 
+sobrescrita;s
+-- ----- ----- -----
+Aula 202 Criando array com compact
+
+● Com a função compact podemos criar um array a partir de variáveis;
+● Passamos para a função o nome das variáveis em string;
+● E então um novo array é criado, podemos atribuir a uma variável;
+-- ----- ----- -----
+Aula 203 Exercício 49
+● Crie variáveis com característica de algum objeto ou animal;
+● Depois crie um array com compact com estas mesmas variáveis;
+● Faça um loop no array e imprima os valores;
+-- ----- ----- -----
+Aula 204 Foreach e arrays
+● Anteriormente vimos a estrutura foreach com arrays, podemos iterar 
+facilmente com ela;
+● Utilizando a notação de chave => valor, temos acesso rápido também a 
+arrays associativos;
+● Exemplo:
+foreach($itens as $key => $value) { }
+-- ----- ----- -----
+Aula 205 Exercício 50
+
+● Crie um array associativo com nomes e idades;
+● Imprima estes dados em uma tabela de HTML;
+● Dica: utilize as tags do elemento table
+-- ----- ----- -----
+Aula 206 Reduce em arrays
+
+● A função array_reduce tem como objetivo reduzir um array a apenas um 
+valor;
+● Podemos passar uma segunda função como parâmetro, para algum 
+processo ser executado;
+array_reduce($arr, $funcao);
+-- ----- ----- -----
+Aula 207 Buscando em arrays
+
+● A função in_array verifica se um item passado por parâmetro está no 
+array;
+● O retorno é true se encontrar o item e false se não encontrar;
+● Vamos passar dois argumentos para a função, exemplo:
+in_array(“item”, $arr)
+-- ----- ----- -----
+Aula 208 Ordenação de arrays
+
+● Para ordenar em ordem crescente podemos utilizar a função sort em um 
+array;
+● Para ordenar de forma inversa utilizamos rsort;
+
+-- ----- ----- -----
+Aula 209
+Ordenação de arrays associativos
+● Para ordenar em ordem crescente pelo valor das chaves, podemos utilizar 
+a função arsort;
+● Se quisermos ordenar o array pelas chaves, utilizamos o valor ksort;
+-- ----- ----- -----
+Aula 210 Exercício 51
+
+● Crie um array associativo com chaves com valor de nomes, e valores com 
+uma pontuação;
+● Ordene os dados do maior para o menor;
+● Exiba uma lista, simulando um ranking, em HTML;
+-- ----- ----- -----
+Aula 211 Invertendo arrays
+
+● Com a função array_reverse podemos obter o array ao inverso;
+● Passamos apenas o array como argumento;
+● O retorno será um array invertido do original;
+-- ----- ----- -----
+Aula 212 Ordem aleatório de itens
+
+● Com a função shuffle podemos reorganizar os itens em ordem aleatória;
+● Passamos apenas o array como parâmetro;
+● Temos um array retornado em ordem aleatória;
+-- ----- ----- -----
+Aula 213 Somando itens de um array
+
+● Para somar os itens de um array utilizamos a função array_sum;
+● Ela nos retorna a soma de todos elementos numéricos do array que 
+passamos como argumento;
+-- ----- ----- -----
+Aula 214 Unindo arrays
+
+● Podemos unir arrays, a ação também é conhecida como merge;
+● A função que vamos utilizar é a array_merge;
+● Que como argumento aceita um número indeterminado de arrays;
+-- ----- ----- -----
+Aula 215 Diferença entre arrays
+
+● Podemos verificar qual a diferença entre dois ou mais arrays com PHP;
+● A função que vamos utilizar para isso é a array_diff;
+● Esta função aceita um número indeterminado 
+
+
+
+
+
+
